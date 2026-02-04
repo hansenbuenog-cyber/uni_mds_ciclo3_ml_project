@@ -5,8 +5,8 @@ The final project for the "Introduction to MLOps" course consists of comprehensi
 
 ### Goals
 * **Adhere to the ML Lifecycle:** Use the standard ML lifecycle as a continuous reference for all activities.
-* **Software Excellence:** Apply essential software development knowledge (version control, modularity) to the ML lifecycle.
-* **Engineering Best Practices:** Implement ML engineering practices for development, deployment, and serving.
+* **Software Skills:** Apply essential software development knowledge (version control, modularity) to the ML lifecycle.
+* **ML Engineering skills:** Implement ML engineering practices for development, deployment, and serving.
 * **MLOps Adoption:** Apply and integrate core MLOps concepts throughout the project.
 
 
@@ -20,20 +20,21 @@ The following sections detail the requirements and steps for the final project:
 * **Data Acquisition:** Identify, define, describe, and analyze your raw dataset(s).
 
 ### B) ML Experimentation
+* Recomended folders to be used: `notebooks`, `experiments`
 * **Execution:** Conduct experiments via Jupyter Notebooks and/or Python scripts.
 * **Data Preparation:** Apply data transformations (if needed) to generate your training dataset.
 * **Model Selection:** Choose and train your ML models.
 * **Evaluation:** Analyze and evaluate the performance results.
 * **Model Selection:** Identify your "champion" (best) model.
 * **Optional:** Use **MLflow** to track and register your experiments.
-
+* **Expected Result:** notebooks and/or results (plots, images, docs, metrics, etc) about your experiments and evaluations. You can  also put your results in the `reports` folder.
 ### C) ML Development Activities
 * **Project Preparation:**
     * Create a **public GitHub repository** in your account. 
-    * Suggested naming convention: `uni_mds_ciclo3_ml_project`.
-    * Establish a clean project structure and work within a dedicated implementation branch.
+      * Suggested naming: `uni_mds_ciclo3_ml_project`.
     * Clone your repository locally for development.
-* **Data Engineering:**
+    * Establish a clean project structure and work within a dedicated new branch.
+* **Data Preparation:**
     * Save your raw dataset in a structured directory (e.g., `/data/raw/`).
     * Implement transformations in a modular Python script (e.g., `data_preparation.py`).
     * *Note: If transformations are not required, provide a justification using graphics or analysis.*
@@ -55,3 +56,9 @@ The following sections detail the requirements and steps for the final project:
     * **Perform Predictions:** Use a REST client (`curl`, a Python script, or `Postman`) to request predictions by passing inputs to your API.
     * Document/register your results.
     * **Expected Result:** Successful generation of prediction values (class, label, or numerical output).
+
+### E) Delivery:
+* Use the README.md file to documentate/describe your work. You can also put a link to refer your  external documentation.
+  * You could create additional files for documentation.
+* When your work is done in your Git branch you should create a Pull Request (PR) to merge your work into `main` branch.
+* In that way, The final project (python code, reports, docs, datasets, etc) should be in the `main` branch.
